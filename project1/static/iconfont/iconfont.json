@@ -1,0 +1,65 @@
+{
+  "id": "3421519",
+  "name": "uniapp1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "278748",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "827620",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "880163",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1110438",
+      "name": "首页-首页",
+      "font_class": "shouyeshouye",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1166629",
+      "name": "动态",
+      "font_class": "duihuakuang",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "11372716",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    },
+    {
+      "icon_id": "11372773",
+      "name": "我的",
+      "font_class": "wode1",
+      "unicode": "e8c6",
+      "unicode_decimal": 59590
+    },
+    {
+      "icon_id": "25886693",
+      "name": "动态",
+      "font_class": "dongtai",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}

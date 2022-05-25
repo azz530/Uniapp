@@ -4,11 +4,7 @@
 			<view class="user">
 				<view class="username">{{userInfo.username}}</view>
 				<view class="avatar">
-					<u-upload :custom-btn="true">
-						<view slot="addBtn" class="slot-btn" hover-class="slot-btn__hover" hover-stay-time="150">
-							<u-avatar style="width: 150rpx;height: 150rpx;" src="../../static/img/banner.jpg"></u-avatar>
-						</view>
-					</u-upload>
+					<u-avatar style="width: 150rpx;height: 150rpx;" src="../../static/img/banner.jpg" @click="toEditInfo"></u-avatar>
 				</view>
 			</view>
 		</view>
@@ -55,6 +51,9 @@
 				})
 				if(res.status === 200){
 					this.userInfo = res.data;
+					setTimeout(()=>{
+						uni.startPullDownRefresh()
+					},500)
 				}
 			},
 			logout(){
@@ -62,8 +61,16 @@
 					url:'./login'
 				})
 			},
+			toEditInfo(){
+				uni.navigateTo({
+					url:'./editUserInfo'
+				});
+			}
 		},
 		onLoad() {
+			this.getUserInfo()
+		},
+		onPullDownRefresh() {
 			this.getUserInfo()
 		}
 	}

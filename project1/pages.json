@@ -23,7 +23,7 @@
 			"path": "pages/user/user",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
+				"enablePullDownRefresh": true,
 				"navigationStyle": "custom"
 			}
 
@@ -31,20 +31,53 @@
 			"path": "pages/details/details",
 			"style": {
 				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/user/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/public/public",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/dynamic/dynamic",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}
+
+		, {
+			"path": "pages/user/editUserInfo",
+			"style": {
+				"navigationBarTitleText": "修改信息",
 				"enablePullDownRefresh": false
 			}
 
 		}
-	    ,{
-            "path" : "pages/user/register",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "乐搜",
@@ -52,20 +85,36 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": { //底部导航栏
-		"color": "#d8d8d8", //未选中颜色
-		"selectedColor": "#444", //选中颜色
+		"color": "#707070", //未选中颜色
+		"selectedColor": "#2e8fef", //选中颜色
+		"backgroundColor": "#fff",
 		"list": [ //导航列表 最少两个，不超过五个
 			{
 				"text": "首页",
 				"pagePath": "pages/index/index", //路径
-				"iconPath": "", //icon图标
-				"selectedIconPath": "" //选中的icon图标
+				"iconPath": "static/img/首页.png", //icon图标
+				"selectedIconPath": "static/img/首页激活.png", //选中的icon图标
+				"iconfont": {
+					"color": "#2e8fef"
+				}
+			},
+			{
+				"text": "动态",
+				"pagePath": "pages/dynamic/dynamic", //路径
+				"iconPath": "static/img/动态.png", //icon图标
+				"selectedIconPath": "static/img/动态激活.png" //选中的icon图标
+			},
+			{
+				"text": "消息",
+				"pagePath": "pages/message/message", //路径
+				"iconPath": "static/img/消息.png", //icon图标
+				"selectedIconPath": "static/img/消息激活.png" //选中的icon图标
 			},
 			{
 				"text": "我的",
 				"pagePath": "pages/user/user", //路径
-				"iconPath": "", //icon图标
-				"selectedIconPath": "" //选中的icon图标
+				"iconPath": "static/img/我的.png", //icon图标
+				"selectedIconPath": "static/img/我的激活.png" //选中的icon图标
 			}
 		]
 	}
